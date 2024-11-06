@@ -22,10 +22,16 @@ header .links {
    display: flex;
    gap: 40px;
 }
-
+header a{
+   text-decoration: none;
+   color:rgba(64, 63, 61, 1);
+}
 header .link_menu {
    display: flex;
    gap: 8px
+}
+header .link_menu:hover {
+   border-bottom: 2px solid black;
 }
 
 header .link_menu img {
@@ -43,7 +49,7 @@ main .enjoy {
    flex-direction: column;
    gap: 40px;
    background-image: url(../images/img-hero.svg);
-   width: 100%;
+   width: 1260px;
    height: 644px;
    border-radius: 40px;
    margin-top: 20px;
@@ -75,7 +81,14 @@ main .enjoy button {
    height: 64px;
    border-radius: 100px;
    color: rgba(64, 63, 61, 1);
+   position: relative;
 
+}
+main .enjoy button:hover::after{
+   content:url(../images/coffee-cup.svg);
+   position: absolute;
+   right:52px;
+   top:20px;
 }
 
 main .fav_cof {
@@ -203,7 +216,6 @@ main .news .photos .borders {
 main .download h3 {
    padding-top: 144px;
    font-size: 60px;
-   font-style: italic;
    color: rgba(64, 63, 61, 1);
 }
 
@@ -219,7 +231,7 @@ main .download span {
 
 }
 
-main .download p {
+main .download .left .par {
    padding-top: 40px;
    font-weight: 400;
    color: rgba(64, 63, 61, 1);
@@ -241,20 +253,14 @@ main .download .left .buttonsinstall button {
    border-radius: 100px;
    width: 200px;
    height: 64px;
-   border: 1px;
+   border: 1px solid rgba(102, 95, 85, 1);
 }
 
 main .download .left .buttonsinstall .google {
    border-radius: 100px;
    width: 200px;
    height: 64px;
-   border: 1px;
-   background-image: url(../images/State=default\ \(1\).svg);
    transition: .1s;
-}
-
-main .download .left .buttonsinstall .google:hover {
-   background-image: url(../images/State=hover\ \(1\).svg);
 }
 
 main .download .left .buttonsinstall .right {
@@ -279,7 +285,6 @@ footer {
 footer .left h1 {
    font-size: 60px;
    color: rgba(225, 212, 201, 1);
-   font-style: italic;
    padding-left: 100px;
    padding-top: 100px;
    width: 530px;
@@ -329,6 +334,19 @@ footer .right .contact{
    display: flex;
    flex-direction: row;
    gap: 8px;
+   padding-bottom:5px;
+}
+.double:hover{
+   border-bottom: 2px solid rgba(225, 212, 201, 1);
+}
+.f{
+   width:182px;
+}
+ .s{
+   width:175px;
+}
+ .t{
+   width:262px;
 }
 footer .right .images{
    display: flex;
@@ -338,4 +356,109 @@ footer .right .images{
 }
 footer .right p{
    color:rgba(225, 212, 201, 1);
+}
+
+.apple {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding-left: 20px;
+   gap: 8px;
+}
+
+.apple .img {
+   background: url("../images/apple.svg") no-repeat;
+
+   width: 36px;
+   height: 36px;
+}
+
+.apple .text {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: start;
+   gap: 2px;
+}
+
+.apple .text p:first-child {
+   font-size: 10px;
+}
+
+.apple:hover {
+   background-color: rgba(102, 95, 85, 1);
+
+   & .img {
+      background: url("../images/apple\)\).svg") no-repeat;
+   }
+   & .text p{
+      color:rgba(225, 212, 201, 1);
+   }
+}
+
+.google {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   padding-left: 20px;
+   gap: 8px;
+}
+
+.google .img {
+   background: url("../images/play.svg") no-repeat;
+
+   width: 36px;
+   height: 36px;
+}
+
+.google .text {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   justify-content: start;
+   gap: 2px;
+}
+
+.google .text p:first-child {
+   font-size: 10px;
+}
+
+.google:hover {
+   background-color: rgba(102, 95, 85, 1);
+
+   & .img {
+      background: url("../images/darkplay.svg") no-repeat;
+   }
+   & .text p{
+      color:rgba(225, 212, 201, 1);
+   }
+}
+ .middle button{
+   width: 60px;
+height: 60px;
+border-radius: 100px;
+border: 1px;
+background: none;
+ }
+.arrowleft{
+   background-image: url("../images/button-icon-darkleft.svg");
+   width: 60px;
+height: 60px;
+border-radius: 100px;
+border: 1px;
+}
+.arrowleft:hover{
+   background-image: url("../images/State=hover\ \(2\).svg");
+   transform: scale(-1,1);
+}
+
+.arrowright{
+   background-image: url("../images/button-icon-dark\ \(1\).svg");
+   width: 60px;
+height: 60px;
+border-radius: 100px;
+border: 1px;
+}
+.arrowright:hover{
+   background-image: url("../images/State=hover\ \(2\).svg");
 }

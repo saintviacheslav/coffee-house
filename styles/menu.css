@@ -1,0 +1,291 @@
+* {
+   padding: 0;
+   margin: 0;
+   font: 600 16px Inter;
+
+}
+
+body {
+   width: 1360px;
+   margin: 0 auto;
+   background: rgba(225, 212, 201, 1);
+}
+
+header {
+   display: flex;
+   color: rgba(64, 63, 61, 1);
+   justify-content: space-between;
+   align-items: center;
+}
+
+header .links {
+   display: flex;
+   gap: 40px;
+}
+
+header .link_menu {
+   display: flex;
+   gap: 8px;
+   border-bottom:2px solid black; 
+}
+header .link_menu img {
+   width: 20px;
+   height: 20px;
+}
+
+header .logo_wrapper img {
+   width: 100px;
+   height: 60px;
+}
+
+main .top {
+   margin-top: 20px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+main .top h2 {
+   font-size: 60px;
+   color: rgba(64, 63, 61, 1);
+}
+
+main .top span {
+   font-size: 60px;
+   color: rgba(176, 144, 122, 1);
+   font-style: italic;
+}
+
+main .top .text {
+   width: 800px;
+   height: 150px;
+   text-align: center;
+}
+main .top .boxes{
+   display: flex;
+   gap: 16px;
+   margin-top: 40px;
+}
+main .top .boxes button {
+   border: 1px;
+   width: 115px;
+   height: 46px;
+   border-radius: 100px;
+}
+main .top .boxes button:nth-of-type(3) {
+   width: 124px;
+   height: 46px;
+   border-radius: 100px;
+}
+main .top .boxes img:nth-of-type(3) {
+   width: 124px;
+   height: 46px;
+   border-radius: 100px;
+}
+main .menulist .upper, main .menulist .bottom{
+   display:flex;
+   flex-direction: row;
+   gap: 40px;
+}
+main .menulist{
+   margin-top: 40px;
+}
+main .menulist .upper .coffee, main .menulist .bottom .coffee{
+   display: flex;
+   flex-direction: column;
+   width: 310px;
+   height: 506px;
+   border-radius: 40px;
+   border: 1px solid rgba(193, 182, 173, 1)
+}
+main .menulist .upper .coffee .text, main .menulist .bottom .coffee .text{
+   display: flex;
+   flex-direction: column;
+   padding-left:20px;
+   gap: 12px;
+   width:200px;
+}
+main .menulist .upper .coffee .text h2, main .menulist .bottom .coffee .text h2{
+   font-size:24px;
+   color: rgba(64, 63, 61, 1);
+}
+main .menulist .upper .coffee .text p, main .menulist .bottom .coffee .text p{
+   font-weight: 400;
+   color: rgba(64, 63, 61, 1);
+}
+main .menulist .bottom{
+   margin-top: 40px;
+}
+
+footer {
+   display: flex;
+   flex-direction: row;
+   gap: 100px;
+   width: 1, 360px;
+   height: 450px;
+   margin-top: 100px;
+   border-radius: 40px;
+   background: rgba(102, 95, 85, 1);
+   margin-bottom: 50px;
+
+}
+
+footer .left h1 {
+   font-size: 60px;
+   color: rgba(225, 212, 201, 1);
+   padding-left: 100px;
+   padding-top: 100px;
+   width: 530px;
+   height: 150px;
+}
+
+footer .left span {
+   font-size: 60px;
+   color: rgba(176, 144, 122, 1);
+
+   font-style: italic;
+   padding-top: 100px;
+   width: 530px;
+   height: 150px;
+}
+
+footer .left .images {
+   display: flex;
+   flex-direction: row;
+   gap:12px;
+   padding-left: 100px;
+   padding-top: 40px;
+   width: 530px;
+   height: 150px;
+}
+footer .left .images img{
+   width: 60px;
+   height:60px;
+}
+.buttonsinstall{
+   display: flex;
+   flex-direction: row;
+   gap:20px;
+}
+footer .right{
+   padding-top: 132px;
+}
+footer .right .contact{
+   font-size: 24px;
+   color:rgba(225, 212, 201, 1);
+}
+.footer .right .images .double img{
+   width: 20px;
+   height: 20px;
+}
+.double{
+   display: flex;
+   flex-direction: row;
+   gap: 8px;
+   padding-bottom:5px;
+}
+.double:hover{
+   border-bottom: 2px solid rgba(225, 212, 201, 1);
+}
+.f{
+   width:182px;
+}
+ .s{
+   width:175px;
+}
+ .t{
+   width:262px;
+}
+footer .right .images{
+   display: flex;
+   flex-direction: column;
+   gap: 20px;
+   margin-top: 40px;
+}
+footer .right p{
+   color:rgba(225, 212, 201, 1);
+}
+main .top .boxes .cupcoffee{
+   display: flex;
+   align-items: center;
+   border: 1px solid rgba(193, 182, 173, 1);
+   border-radius: 100px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 8px;
+   padding-right: 16px;
+
+}
+main .top .boxes .cupcoffee .circle{
+   width: 30px;
+   height: 30px;
+   border-radius: 100px;
+   background: rgba(193, 182, 173, 1);
+   margin-right: 8px;
+}
+main .top .boxes .cupcoffee .circle p{
+   padding-left: 4px;
+   padding-top: 2px;
+}
+
+main .top .boxes .cuptea{
+   display: flex;
+   align-items: center;
+   border: 1px solid rgba(193, 182, 173, 1);
+   border-radius: 100px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 8px;
+   padding-right: 16px;
+   width: 91px;
+}
+main .top .boxes .cuptea .circle{
+   width: 30px;
+   height: 30px;
+   border-radius: 100px;
+   background: rgba(193, 182, 173, 1);
+   margin-right: 8px;
+}
+main .top .boxes .cuptea .circle p{
+   padding-left: 6px;
+   padding-top: 3px;
+}
+main .top .boxes .circle .tut{
+color:rgba(64, 63, 61, 1);
+}
+
+main .top .boxes .dessert{
+   display: flex;
+   align-items: center;
+   border: 1px solid rgba(193, 182, 173, 1);
+   border-radius: 100px;
+   padding-top: 8px;
+   padding-bottom: 8px;
+   padding-left: 8px;
+   padding-right: 16px;
+   width: 91px;
+   }
+   main .top .boxes .dessert:hover,main .top .boxes .cuptea:hover,main .top .boxes .cupcoffee:hover{
+      background-color: rgba(102, 95, 85, 1);
+      & .circle{
+         background: rgba(225, 212, 201, 1);
+      }
+      & .tut{
+         color:rgba(225, 212, 201, 1);
+      }
+   }
+   main .top .boxes .dessert .tut{
+      color:rgba(64, 63, 61, 1);
+   }
+main .top .boxes .dessert .circle{
+   width: 30px;
+   height: 30px;
+   border-radius: 100px;
+   background: rgba(193, 182, 173, 1);
+   margin-right: 8px;
+}
+main .top .boxes .dessert .circle p{
+   padding-left: 4px;
+   padding-top: 2px;
+}
